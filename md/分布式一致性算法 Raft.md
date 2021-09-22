@@ -33,7 +33,7 @@ Raft 将共识问题分解三个子问题：
 1.  **follower 从节点**：
 
 *   节点默认是 follower；
-*   如果 ** 刚刚开始 ** 或 **和 leader 通信超时**，follower 会发起选举，变成 candidate，然后去竞选 leader；
+*   如果 **刚刚开始** 或 **和 leader 通信超时**，follower 会发起选举，变成 candidate，然后去竞选 leader；
 *   如果收到其他 candidate 的竞选投票请求，按照**先来先得** & **每个任期只能投票一次** 的投票原则投票;
 
 1.  **candidate 候选者**：
